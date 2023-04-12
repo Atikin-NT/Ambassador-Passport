@@ -1,7 +1,21 @@
 [package]
-name = 'passport'
+name = 'Passport'
 version = '1.0.0'
-[dependencies.AptosFramework]
-git = 'https://github.com/aptos-labs/aptos-core.git'
-rev = 'main'
-subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]     
+admin_addr = "7730365f46f077b806b2934f491176850ba18edc8c7c13af0f15f3dc8fc72dc7"
+
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework", rev = "main" }
+AptosToken  = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token", rev = "main" }
+
+# [dependencies.AptosFramework]
+# git = 'https://github.com/aptos-labs/aptos-core.git'
+# rev = 'main'
+# subdir = 'aptos-move/framework/aptos-framework'
+
+# [dependencies.AptosToken]
+# git = 'https://github.com/aptos-labs/aptos-core.git'
+# rev = 'main'
+# subdir = 'aptos-move/framework/aptos-token'
